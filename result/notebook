@@ -1,0 +1,44 @@
+16/12/2012
+No luck with fastdist of Fastphylip  in my computer.
+fastdist s001.align.1.msl
+<?xml version="1.0"?>
+<root>
+ <runs>
+
+-----------------
+Exception
+File:      /scratch/tisdag/fastphylo/trunk/src/c++/programs/fastdist/FastaInputStream.cpp
+Function:  readSeq
+Line:      78
+Message:   Malformed Fasta format
+
+-----------------
+
+17/12/2012
+Reinstalled fastphylip program in hope to see it working .
+No luck at all :((
+Decided to work with Phylip protdist and Phylip neighbor program instead of fastdist and fnj respectively
+as Fastphylip was bluffing me . But given alignments are fast format , so I had to convert these to phylip
+format to feed to Phylip protdist .
+
+
+
+18/12/2012
+Only focused on writing module to detect a noisy column based on following
+    * there are indels,
+    * at least 50% of amino acids are unique,
+
+Finalising  Module to invoke Phylip protdist and Phylip neighbor
+
+19/12/2012
+Finalising  Module to   covert noise reduced alignment to phylip file
+
+20/12/2012
+writing runall driver script to accomplish all the task
+
+21/12/2012
+Decied to use MySQL but later figured out not that good idea as I had to do one more step (converting all
+given alignment to phylip format)
+
+
+
